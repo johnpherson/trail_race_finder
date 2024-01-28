@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Run Adventures - Windows 95 Edition</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!--Site banner -->
+
+
+        <!-- Site Title -->
+        <h1>Trail Run Adventures - Modern Edition</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Explore the Great Outdoors with Trail Run Adventures</h1>
+        <p>Join us for exciting trail runs amidst stunning natural landscapes.</p>
+    </div>
+
+    <main>
+        <h2>Welcome to Trail Run Adventures</h2>
+        <p>Discover the thrill of trail running with us! Whether you're a seasoned trail runner or a beginner looking for new challenges, we have events suited for all levels. Explore our upcoming events and join our community of outdoor enthusiasts.</p>
+
+        <h2>Filter Events</h2>
+        <form id="filter-form">
+            <label for="race-distance">Race Distance:</label>
+            <select id="race-distance" name="race-distance">
+                <option value="">Any</option>
+                <option value="5k">5K</option>
+                <option value="10k">10K</option>
+                <option value="half-marathon">Half Marathon</option>
+                <option value="marathon">Marathon</option>
+            </select>
+
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="">Any</option>
+                <option value="CA">California</option>
+                <option value="NY">New York</option>
+                <option value="CO">Colorado</option>
+                <!-- Add more states as needed -->
+            </select>
+
+            <label for="elevation-gain">Elevation Gain:</label>
+            <input type="text" id="elevation-gain" name="elevation-gain" placeholder="Enter elevation gain">
+
+            <button type="submit">Filter</button>
+        </form>
+
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Trail Run Challenge - [Date] - 10K - California</li>
+            <li>Mountain Marathon - [Date] - Marathon - Colorado</li>
+            <li>Forest Explorer Run - [Date] - 5K - New York</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trail Run Adventures - Modern Edition. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
