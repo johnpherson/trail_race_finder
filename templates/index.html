@@ -11,11 +11,11 @@
 <body>
 
     <header>
-        <!--Site banner -->
-
+        <!-- Banner Image -->
+        <img src="{{ url_for('static', filename='images/homepage_banner.jpg') }}" alt="Trail Run Adventures Banner">
 
         <!-- Site Title -->
-        <h1>Trail Run Adventures - Modern Edition</h1>
+        <h1>Trail Race Finder</h1>
     </header>
 
     <nav>
@@ -25,47 +25,46 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- Move the filter form below the header -->
+    <form id="filter-form">
+        <h2>Filter Events</h2>
+        <label for="race-distance">Race Distance:</label>
+        <select id="race-distance" name="race-distance">
+            <option value="">Any</option>
+            <option value="5k">5K</option>
+            <option value="10k">10K</option>
+            <option value="half-marathon">Half Marathon</option>
+            <option value="marathon">Marathon</option>
+        </select>
+
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="">Any</option>
+            <option value="CA">California</option>
+            <option value="NY">New York</option>
+            <option value="CO">Colorado</option>
+            <!-- Add more states as needed -->
+        </select>
+
+        <label for="elevation-gain">Elevation Gain:</label>
+        <select id="state" name="state">
+            <option value="01000">0 - 1000</option>
+            <option value="10003000">1000 - 3000</option>
+            <option value=30005000>3000 - 5000</option>
+            <option value=5000>5000 +</option>
+        </select>
+
+        <button type="submit">Filter</button>
+    </form>
+
     <div class="hero">
         <h1>Explore the Great Outdoors with Trail Run Adventures</h1>
         <p>Join us for exciting trail runs amidst stunning natural landscapes.</p>
     </div>
 
     <main>
-        <h2>Welcome to Trail Run Adventures</h2>
-        <p>Discover the thrill of trail running with us! Whether you're a seasoned trail runner or a beginner looking for new challenges, we have events suited for all levels. Explore our upcoming events and join our community of outdoor enthusiasts.</p>
+        <!-- ... rest of your HTML ... -->
 
-        <h2>Filter Events</h2>
-        <form id="filter-form">
-            <label for="race-distance">Race Distance:</label>
-            <select id="race-distance" name="race-distance">
-                <option value="">Any</option>
-                <option value="5k">5K</option>
-                <option value="10k">10K</option>
-                <option value="half-marathon">Half Marathon</option>
-                <option value="marathon">Marathon</option>
-            </select>
-
-            <label for="state">State:</label>
-            <select id="state" name="state">
-                <option value="">Any</option>
-                <option value="CA">California</option>
-                <option value="NY">New York</option>
-                <option value="CO">Colorado</option>
-                <!-- Add more states as needed -->
-            </select>
-
-            <label for="elevation-gain">Elevation Gain:</label>
-            <input type="text" id="elevation-gain" name="elevation-gain" placeholder="Enter elevation gain">
-
-            <button type="submit">Filter</button>
-        </form>
-
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li>Trail Run Challenge - [Date] - 10K - California</li>
-            <li>Mountain Marathon - [Date] - Marathon - Colorado</li>
-            <li>Forest Explorer Run - [Date] - 5K - New York</li>
-        </ul>
     </main>
 
     <footer>
